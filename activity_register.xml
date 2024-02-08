@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Registration Elements -->
+
+    <EditText
+        android:id="@+id/edit_text_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="email"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+    />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edit_text_email_register"
+        android:layout_marginTop="8dp"
+        android:autofillHints="username"
+        android:hint="@string/username_hint"
+        android:inputType="text"
+        android:padding="8dp"
+    />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/edit_text_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edit_text_username"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:padding="8dp"
+    />
+
+    <!-- Confirm Password EditText -->
+    <EditText
+        android:id="@+id/edit_text_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edit_text_password_register"
+        android:layout_marginTop="8dp"
+        android:autofillHints="confirm-password"
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:maxWidth="488dp"
+    />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:autofillHints="register"
+        android:text="@string/register_button_text"
+        android:contentDescription="@string/register_button_content_description"
+    />
+</RelativeLayout>
